@@ -99,6 +99,7 @@ function write_blob(options) {
                 {
                     headers: {authorization: auth_token},
                     method: "put",
+                    mode: 'no-cors',
                     body: blob
                 }
             ),
