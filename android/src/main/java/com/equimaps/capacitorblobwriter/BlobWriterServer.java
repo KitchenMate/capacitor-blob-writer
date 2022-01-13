@@ -39,7 +39,7 @@ public class BlobWriterServer extends NanoHTTPD {
         response.addHeader("Content-Length", "0");
 
         if (origin != null) {
-            response.addHeader("Access-Control-Allow-Origin", origin);
+            response.addHeader("Access-Control-Allow-Origin", "*");
             response.addHeader("Access-Control-Allow-Methods", "GET, POST, PUT, HEAD, OPTIONS");
 
             String requestHeaders = session.getHeaders().get("access-control-request-headers");
